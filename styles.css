@@ -1,0 +1,52 @@
+body {
+  margin: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #1f1f1f;
+}
+
+.navbar {
+  height: 80px;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.navbarCenter {
+  width: 80%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menuItem {
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.button {
+  border: 1px solid;
+  border-color: white;
+  padding: 8px 20px 8px 20px;
+  cursor: pointer;
+}
+
+.preSection1 {
+  display: flex;
+  justify-content: center;
+  height: 500px;
+}
+.section1 {
+  color: white;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
