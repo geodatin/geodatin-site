@@ -90,7 +90,7 @@ body {
 .gridProjects {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  height: 80vh;
 }
 
 .gridItem {
@@ -118,6 +118,44 @@ body {
   justify-content: space-between;
   /*justify-content: flex-end;
   align-items: space-around; */
+}
+
+.gridInner1 {
+  width: 50%;
+  background: gray;
+}
+
+.gridInner2 {
+  width: 50%;
+  background: white;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.gridItemProject {
+  width: 270px;
+  height: 270px;
+  background: #2a2a2a;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.miniBar {
+  width: 40px;
+  height: 5px;
+  background: white;
+  margin: 10px;
+}
+
+.lineProject {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .logo {
