@@ -9,10 +9,14 @@
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="navbar">
-      <div class="navbarCenter">
+      <div class="navbarWrapper">
         <div class="logo">
           <img
             src="assets/geodatinlogo.png"
@@ -21,7 +25,7 @@
             height="50"
           />
         </div>
-        <div class="menu">
+        <div class="defaultMenu">
           <div class="menuItem">
             Sobre
           </div>
@@ -31,35 +35,25 @@
           <div class="menuItem">
             Equipe
           </div>
-          <div class="button">
+          <div class="outlinedButton">
             Contate-nos
           </div>
         </div>
       </div>
     </div>
     <div class="preSection">
-      <div class="section1">
-        <div
-          style="
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-          "
-        >
-          <h1>
-            A união entra<br />inteligência em dados<br />e a geoinformação
-          </h1>
-        </div>
-        <div
-          style="display: flex; flex-direction: row; justify-content: center;"
-        >
-          <p>Conheça\/</p>
+      <div id="section1" class="section">
+        <h1>A união entra<br />inteligência em dados<br />e a geoinformação</h1>
+        <div id="knowButton">
+          Conheça
+          <span class="material-icons">
+            keyboard_arrow_down
+          </span>
         </div>
       </div>
     </div>
     <div class="preSection">
-      <div class="section2">
+      <div id="section2" class="section">
         <div class="textAbout">
           <h1>
             O que fazemos?
@@ -108,7 +102,7 @@
     </div>
 
     <div class="preSection">
-      <div class="section3">
+      <div id="section3" class="section">
         <div>
           <h1>
             Nossos projetos
