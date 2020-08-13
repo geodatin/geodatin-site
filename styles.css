@@ -9,6 +9,8 @@ body {
   color: white;
   display: flex;
   justify-content: center;
+  position: fixed;
+  width: 100%;
 }
 
 .navbarCenter {
@@ -38,11 +40,21 @@ body {
   cursor: pointer;
 }
 
+.button:hover {
+  border: 1px solid;
+  border-color: white;
+  background: white;
+  padding: 8px 20px 8px 20px;
+  cursor: pointer;
+  color: black;
+}
+
 .preSection {
   display: flex;
   justify-content: center;
-  height: 500px;
+  min-height: 90vh;
 }
+
 .section1 {
   color: white;
   width: 80%;
@@ -59,12 +71,26 @@ body {
   justify-content: space-between;
 }
 
-.grid {
+.section3 {
+  color: white;
+  width: 80%;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+}
+
+.gridWorks {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: flex-end;
   width: 50%;
+}
+
+.gridProjects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .gridItem {
@@ -92,4 +118,8 @@ body {
   justify-content: space-between;
   /*justify-content: flex-end;
   align-items: space-around; */
+}
+
+.logo {
+  cursor: pointer;
 }
