@@ -10,6 +10,7 @@ body {
   display: flex;
   justify-content: center;
   position: fixed;
+  z-index: 100;
   width: 100%;
 }
 
@@ -32,12 +33,6 @@ body {
   display: none;
 }
 
-.preSection {
-  display: flex;
-  justify-content: center;
-  min-height: 90vh;
-}
-
 #knowButton {
   display: flex;
   align-items: center;
@@ -49,45 +44,72 @@ body {
   padding: 5px;
 }
 
-.section {
-  color: white;
-  width: 80%;
+.sectionWrapper {
+  height: 100vh;
+  overflow-x: hidden;
+  perspective: 1px;
+  transform-style: preserve-3d;
 }
 
-#section1 {
+.imageSection {
+  position: relative;
+  height: 90vh;
+  z-index: -1;
+  transform-style: inherit;
   display: flex;
-  flex-direction: column;
   justify-content: center;
 }
 
-#section1::after {
-  content: " ";
-  z-index: -1;
+.imageSection::before {
   position: absolute;
-  width: 100%;
-  height: 90vh;
-  left: 0;
   top: 0;
-  background: black;
-  opacity: 0.4;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: "";
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transform: translateZ(-1px) scale(2.2);
 }
 
-#section1::before {
-  content: " ";
-  z-index: -2;
+.colorSection {
+  position: relative;
+  min-height: 90vh;
+  z-index: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.colorSection::before {
   position: absolute;
-  width: 100%;
-  height: 90vh;
-  left: 0;
   top: 0;
-  background-image: url("assets/background2.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  content: "";
+  background-color: #1f1f1f;
+}
+
+.sectionInner {
+  min-height: 90vh;
+  width: 80%;
+  color: white;
 }
 
 .title {
   font-size: 42px;
+}
+
+.bgImage1::before {
+  background-image: url("assets/background2.jpg");
+}
+
+#section1 {
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 700px) {
@@ -109,8 +131,7 @@ body {
     padding: 0px 15px;
   }
 
-  .section {
-    color: white;
+  .sectionInner {
     width: 100%;
     padding: 0px 15px;
   }
