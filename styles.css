@@ -148,6 +148,12 @@ body {
   align-items: center;
 }
 
+#sectionProjects {
+  display: flex;
+  flex-flow: column;
+  background: royalblue;
+}
+
 @media (max-width: 700px) {
   .defaultMenu {
     display: none;
@@ -189,11 +195,6 @@ body {
 .outlinedButton:hover {
   background: white;
   color: black;
-}
-
-.gridProjects {
-  display: flex;
-  flex-flow: row wrap;
 }
 
 .gridWorks {
@@ -248,16 +249,50 @@ body {
   justify-content: center;
 }
 
+.gridProjects {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: seashell;
+  width: 50%;
+}
+
 .gridItemProject {
-  width: 270px;
-  height: 270px;
+  /*width: 300px;
+  height: 300px;*/
+  height: 100%;
   background: #2a2a2a;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end;
   align-items: center;
   text-align: center;
-  padding-bottom: 20px;
+}
+
+.gridItemProject2 {
+  /*width: 300px;
+  height: 300px;*/
+  background: purple;
+  width: 50%;
+  height: 100%; /*height: 600px;*/
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}
+
+.gridProjectsOutside {
+  /*   align-items: center; */
+  /*   justify-content: center; */
+  background: seagreen;
+  height: 80vh;
+}
+
+.gridProjectsInner {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .miniBar {
