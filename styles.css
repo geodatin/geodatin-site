@@ -164,45 +164,47 @@ body {
   color: black;
 }
 
-.gridWorks {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 50%;
-}
-
 .gridProjects {
   display: flex;
   flex-flow: row wrap;
-  height: 80vh;
+}
+
+.gridWorks {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#sectionWorks {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .gridItem {
-  width: 220px;
-  height: 220px;
+  width: 200px;
+  height: 200px;
   background: #2a2a2a;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
   text-align: center;
-}
-
-.textAbout {
-  width: 410px;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
+  outline: 10px solid #1f1f1f;
+  outline-offset: -1px;
+  padding: 20px;
 }
 
 .line {
-  width: 100%;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
-  /*justify-content: flex-end;
-  align-items: space-around; */
+  justify-content: center;
+}
+
+.textAbout {
+  width: 400px;
 }
 
 .gridInner1 {
