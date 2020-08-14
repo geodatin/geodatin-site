@@ -129,6 +129,12 @@ body {
   font-size: 42px;
 }
 
+.subtitle {
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
 .bgImage1::before {
   background-image: url("assets/imgs/background2.jpg");
 }
@@ -163,7 +169,7 @@ body {
 
   .sectionInner {
     width: 100%;
-    padding: 0px 15px;
+    padding: 50px 15px;
   }
 }
 
