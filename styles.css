@@ -113,7 +113,7 @@ body {
 }
 
 .bgImage1::before {
-  background-image: url("assets/background2.jpg");
+  background-image: url("assets/imgs/background2.jpg");
 }
 
 #section1 {
@@ -238,6 +238,12 @@ body {
   margin: 10px;
 }
 
+.miniBar2 {
+  width: 40px;
+  height: 5px;
+  background: white;
+}
+
 .lineProject {
   display: flex;
   flex-flow: row wrap;
@@ -245,4 +251,77 @@ body {
 
 .logo {
   cursor: pointer;
+}
+
+#sectionTeam {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.gridTeam {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+}
+
+.lineTeam {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.memberPhoto {
+  border-radius: 50%;
+}
+
+.contactArea {
+  /* background: purple; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.contactAreaLeft {
+  /* background: gray; */
+}
+
+.contactAreaRight {
+  /* background: pink; */
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.lineContact {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.gridContact {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemContact {
+  width: 300px;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
 }
