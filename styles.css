@@ -236,19 +236,19 @@ body {
 .gridItemProject {
   width: 200px;
   height: 200px;
-  background: #2a2a2a;
+  background: #1f1f1f;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end;
   align-items: center;
   text-align: center;
-  outline: 10px solid #1f1f1f;
+  outline: 10px solid #2a2a2a;
   outline-offset: -1px;
   padding: 20px;
 }
 
 .outsideItemProject {
-  background: #2a2a2a;
+  background: #1f1f1f;
   width: 440px;
   height: 440px;
   display: flex;
@@ -256,7 +256,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   text-align: center;
-  outline: 10px solid #1f1f1f;
+  outline: 10px solid #2a2a2a;
   outline-offset: -1px;
   padding: 20px;
 }
