@@ -148,12 +148,6 @@ body {
   align-items: center;
 }
 
-#sectionProjects {
-  display: flex;
-  flex-flow: column;
-  background: royalblue;
-}
-
 @media (max-width: 700px) {
   .defaultMenu {
     display: none;
@@ -204,11 +198,25 @@ body {
   align-items: center;
 }
 
+.gridProjects {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #sectionWorks {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-between;
+}
+
+#sectionProjects {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .gridItem {
@@ -223,6 +231,39 @@ body {
   outline: 10px solid #1f1f1f;
   outline-offset: -1px;
   padding: 20px;
+}
+
+.gridItemProject {
+  width: 200px;
+  height: 200px;
+  background: #2a2a2a;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  outline: 10px solid #1f1f1f;
+  outline-offset: -1px;
+  padding: 20px;
+}
+
+.outsideItemProject {
+  background: #2a2a2a;
+  width: 440px;
+  height: 440px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  outline: 10px solid #1f1f1f;
+  outline-offset: -1px;
+  padding: 20px;
+}
+
+.outsideGridProjects {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .line {
@@ -249,52 +290,6 @@ body {
   justify-content: center;
 }
 
-.gridProjects {
-  display: flex;
-  flex-flow: column wrap;
-  background-color: seashell;
-  width: 50%;
-}
-
-.gridItemProject {
-  /*width: 300px;
-  height: 300px;*/
-  height: 100%;
-  background: #2a2a2a;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-end;
-  align-items: center;
-  text-align: center;
-}
-
-.gridItemProject2 {
-  /*width: 300px;
-  height: 300px;*/
-  background: purple;
-  width: 50%;
-  height: 100%; /*height: 600px;*/
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-end;
-  align-items: center;
-  text-align: center;
-}
-
-.gridProjectsOutside {
-  /*   align-items: center; */
-  /*   justify-content: center; */
-  background: seagreen;
-  height: 80vh;
-}
-
-.gridProjectsInner {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-}
-
 .miniBar {
   width: 40px;
   height: 5px;
@@ -306,11 +301,6 @@ body {
   width: 40px;
   height: 5px;
   background: white;
-}
-
-.lineProject {
-  display: flex;
-  flex-flow: row wrap;
 }
 
 .logo {
