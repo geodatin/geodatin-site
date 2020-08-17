@@ -64,7 +64,7 @@ body {
   padding: 25px;
   top: 40px;
   right: 0px;
-  transition: all 0.2 ease-in-out;
+  transition: opacity 0.1s ease-in-out;
   -webkit-box-shadow: 5px 5px 30px -13px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 5px 5px 30px -13px rgba(0, 0, 0, 0.75);
   box-shadow: 5px 5px 30px -13px rgba(0, 0, 0, 0.75);

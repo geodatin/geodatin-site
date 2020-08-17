@@ -29,10 +29,17 @@ $(".sectionWrapper").scroll(function () {
 });
 
 $(document).on("click", function (event) {
-  $("#responsiveMenuContainer").hide();
+  $("#responsiveMenuContainer").css("opacity", 0);
 });
 
 $(".responsiveMenu").on("click", function (event) {
-  $("#responsiveMenuContainer").toggle();
+  const container = $("#responsiveMenuContainer");
+
+  if (container[0].style.opacity === "0") {
+    container.css("opacity", 1);
+  } else {
+    container.css("opacity", 0);
+  }
+
   event.stopPropagation();
 });
