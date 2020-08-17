@@ -93,13 +93,6 @@ body {
   padding: 5px;
 }
 
-#sectionAbout {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .sectionWrapper {
   height: 100vh;
   overflow-x: hidden;
@@ -110,7 +103,7 @@ body {
 
 .imageSection {
   position: relative;
-  height: 90vh;
+  min-height: 90vh;
   z-index: -1;
   transform-style: inherit;
   display: flex;
@@ -211,6 +204,33 @@ body {
   padding: 0px 15px;
 }
 
+#sectionAbout {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#sectionProjects {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+#sectionTeam {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+#sectionContact {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+}
+
 @media (max-width: 700px) {
   .defaultMenu {
     display: none;
@@ -261,20 +281,6 @@ body {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-}
-
-#sectioAbout {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-#sectionProjects {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 
 .gridItem {
@@ -363,19 +369,6 @@ body {
 
 .logo {
   cursor: pointer;
-}
-
-#sectionTeam {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}
-
-#sectionContact {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  text-align: center;
 }
 
 .gridTeam {
