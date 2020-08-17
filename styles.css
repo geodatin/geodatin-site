@@ -23,6 +23,15 @@ body {
   align-items: center;
 }
 
+#navbarBackground {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 80px;
+  left: 0;
+  transition: background-color 0.2s ease-in-out;
+}
+
 .defaultMenu {
   display: flex;
   flex-flow: row nowrap;
