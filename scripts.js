@@ -1,10 +1,7 @@
 $("a").on("click", function (event) {
   event.preventDefault();
   var hash = this.hash;
-  var position =
-    $(".sectionWrapper").scrollTop() +
-    $(hash).offset().top -
-    $(".navbar").outerHeight();
+  var position = $(".sectionWrapper").scrollTop() + $(hash).offset().top - 30; //$(".navbar").outerHeight()
 
   $(".sectionWrapper").animate(
     {
@@ -15,6 +12,7 @@ $("a").on("click", function (event) {
 });
 
 $(".sectionWrapper").scroll(function () {
+  event.stopPropagation();
   var navHeight = $(".navbar").outerHeight();
 
   if (0 >= $("#sectionContact").offset().top - navHeight) {
@@ -28,4 +26,13 @@ $(".sectionWrapper").scroll(function () {
   } else {
     $("#navbarBackground").css("background-color", "transparent");
   }
+});
+
+$(document).on("click", function (event) {
+  $("#responsiveMenuContainer").hide();
+});
+
+$(".responsiveMenu").on("click", function (event) {
+  $("#responsiveMenuContainer").toggle();
+  event.stopPropagation();
 });

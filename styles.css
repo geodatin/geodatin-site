@@ -41,6 +41,44 @@ body {
 
 .responsiveMenu {
   display: none;
+  position: relative;
+}
+
+.defaultMenuItem {
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.responsiveMenuItem {
+  white-space: nowrap;
+  cursor: pointer;
+  padding: 10px 0px;
+}
+
+#responsiveMenuContainer {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #2a2a2a;
+  padding: 25px;
+  top: 40px;
+  right: 0px;
+  transition: all 0.2 ease-in-out;
+  -webkit-box-shadow: 5px 5px 30px -13px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 5px 5px 30px -13px rgba(0, 0, 0, 0.75);
+  box-shadow: 5px 5px 30px -13px rgba(0, 0, 0, 0.75);
+}
+
+#responsiveMenuContainer:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: #2a2a2a;
+  position: absolute;
+  top: -5px;
+  right: 13px;
+  transform: rotate(45deg);
 }
 
 #knowButton {
@@ -188,11 +226,6 @@ body {
     width: 100%;
     padding: 50px 15px;
   }
-}
-
-.menuItem {
-  margin-right: 40px;
-  cursor: pointer;
 }
 
 .outlinedButton {
