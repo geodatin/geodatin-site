@@ -363,6 +363,13 @@ body {
   align-items: center;
 }
 
+#sectionContact {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+}
+
 .gridTeam {
   display: flex;
   flex-flow: column wrap;
@@ -390,39 +397,15 @@ body {
 }
 
 .contactArea {
-  /* background: purple; */
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-}
-
-.contactAreaLeft {
-  /* background: gray; */
-}
-
-.contactAreaRight {
-  /* background: pink; */
-  display: flex;
+  width: 100%;
   flex-flow: row wrap;
   justify-content: center;
-}
-
-.lineContact {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.gridContact {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
 }
 
 .itemContact {
-  width: 300px;
+  margin: 20px;
+  width: 250px;
   text-align: center;
   display: flex;
   flex-flow: column nowrap;
