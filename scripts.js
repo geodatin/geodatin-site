@@ -35,10 +35,10 @@ $(document).on("click", function (event) {
 $(".responsiveMenu").on("click", function (event) {
   const container = $("#responsiveMenuContainer");
 
-  if (container[0].style.opacity === "0") {
-    container.css("opacity", 1);
-  } else {
+  if (container[0].style.opacity === "1") {
     container.css("opacity", 0);
+  } else {
+    container.css("opacity", 1);
   }
 
   event.stopPropagation();
