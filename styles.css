@@ -93,6 +93,13 @@ body {
   padding: 5px;
 }
 
+#sectionAbout {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .sectionWrapper {
   height: 100vh;
   overflow-x: hidden;
