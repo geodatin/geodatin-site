@@ -60,6 +60,7 @@ body {
   transform-style: inherit;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 }
 
 .imageSection::before {
@@ -123,6 +124,7 @@ body {
   width: 80%;
   color: white;
   padding: 50px 0px;
+  position: relative;
 }
 
 .title {
@@ -387,7 +389,7 @@ body {
 }
 
 #footer {
-  min-height: 55vh;
+  min-height: 200px;
   color: white;
   display: flex;
   flex-flow: row wrap;
