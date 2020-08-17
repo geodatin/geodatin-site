@@ -56,6 +56,7 @@ body {
 }
 
 #responsiveMenuContainer {
+  opacity: 0;
   display: flex;
   position: absolute;
   flex-direction: column;
