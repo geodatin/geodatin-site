@@ -214,8 +214,6 @@ body {
 #sectionProjects {
   display: flex;
   flex-flow: column nowrap;
-  align-items: flex-start;
-  justify-content: flex-start;
 }
 
 #sectionTeam {
@@ -229,6 +227,7 @@ body {
   flex-flow: column;
   align-items: center;
   text-align: center;
+  justify-content: center;
 }
 
 @media (max-width: 700px) {
@@ -276,13 +275,6 @@ body {
   align-items: center;
 }
 
-.gridProjects {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .gridItem {
   width: 200px;
   height: 200px;
@@ -297,9 +289,18 @@ body {
   padding: 20px;
 }
 
+.gridProjects {
+  width: 50%;
+}
+
+.line2 {
+  width: 100%;
+  display: flex;
+  height: 50%;
+}
+
 .gridItemProject {
-  width: 260px;
-  height: 200px;
+  width: 50%;
   background: #1f1f1f;
   display: flex;
   flex-flow: column nowrap;
@@ -308,13 +309,15 @@ body {
   text-align: center;
   outline: 10px solid #2a2a2a;
   outline-offset: -1px;
-  padding: 20px;
+  padding-bottom: 20px;
 }
 
 .outsideItemProject {
   background: #1f1f1f;
-  width: 440px;
-  height: 440px;
+  width: 50%;
+  height: auto;
+  /* width: 440px;
+  height: 440px; */
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end;
@@ -322,12 +325,13 @@ body {
   text-align: center;
   outline: 10px solid #2a2a2a;
   outline-offset: -1px;
-  padding: 20px;
+  padding-bottom: 20px;
 }
 
 .outsideGridProjects {
   display: flex;
   flex-flow: row wrap;
+  height: 60vh;
 }
 
 .line {
