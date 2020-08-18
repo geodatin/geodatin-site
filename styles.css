@@ -344,11 +344,11 @@ body {
 
 @media (max-width: 767px) {
   .projectItem {
-    height: 80vh;
+    height: 60vh;
   }
 
   .projectItemOutside {
-    height: 80vh;
+    height: 60vh;
   }
 }
 
@@ -362,35 +362,6 @@ body {
     align-items: center;
     cursor: pointer;
     padding: 5px;
-  }
-
-  .outsideGridProjects {
-    display: flex;
-    flex-flow: column nowrap;
-    background: white;
-  }
-
-  .outsideItemProject {
-    width: 100%;
-    height: 60vh;
-  }
-
-  .gridProjects {
-    height: auto;
-    width: 100%;
-    background: black;
-  }
-
-  .line2 {
-    height: auto;
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-  }
-
-  .gridItemProject {
-    width: 100%;
-    height: 60vh;
   }
 }
 
