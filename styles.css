@@ -186,11 +186,11 @@ body {
 }
 
 .bgImage1::before {
-  background-image: url("assets/imgs/background2.jpg");
+  background-image: url("assets/imgs/background1.jpeg");
 }
 
 .bgImage2::before {
-  background-image: url("assets/imgs/background1.jpg");
+  background-image: url("assets/imgs/background2.jpg");
 }
 
 .link {
@@ -284,7 +284,7 @@ body {
   text-align: center;
   outline: 10px solid #2a2a2a;
   outline-offset: -1px;
-  padding-bottom: 20px;
+  padding: 30px;
 }
 
 .outsideItemProject {
