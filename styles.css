@@ -230,31 +230,6 @@ body {
   justify-content: center;
 }
 
-@media (max-width: 700px) {
-  .defaultMenu {
-    display: none;
-  }
-
-  .responsiveMenu {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    padding: 5px;
-  }
-}
-
-@media (max-width: 900px) {
-  .navbar {
-    width: 100%;
-    padding: 0px 15px;
-  }
-
-  .sectionInner {
-    width: 100%;
-    padding: 50px 15px;
-  }
-}
-
 .outlinedButton {
   border: 1px solid;
   border-color: white;
@@ -331,7 +306,51 @@ body {
 .outsideGridProjects {
   display: flex;
   flex-flow: row wrap;
-  height: 60vh;
+  height: 70vh;
+}
+
+@media (max-width: 700px) {
+  .defaultMenu {
+    display: none;
+  }
+
+  .responsiveMenu {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+  }
+
+  .outsideGridProjects {
+    display: flex;
+    flex-flow: column nowrap;
+    background: white;
+  }
+
+  .outsideItemProject {
+    width: 100%;
+    height: 40%;
+  }
+
+  .gridProjects {
+    width: 100%;
+  }
+
+  .line2 {
+    height: 62%;
+  }
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    width: 100%;
+    padding: 0px 15px;
+  }
+
+  .sectionInner {
+    width: 100%;
+    padding: 50px 15px;
+  }
 }
 
 .line {
