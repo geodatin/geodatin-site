@@ -334,10 +334,12 @@ body {
 
   .gridProjects {
     width: 100%;
+    height: 60%;
+    background: black;
   }
 
   .line2 {
-    height: 62%;
+    height: 50%;
   }
 }
 
