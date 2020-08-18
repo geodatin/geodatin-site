@@ -307,6 +307,42 @@ body {
   flex-flow: row wrap;
 }
 
+.projectItem {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  outline: 10px solid #2a2a2a;
+  outline-offset: -5px;
+  padding-bottom: 20px;
+  background: #1f1f1f;
+  height: 40vh;
+}
+
+.projectItemOutside {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  outline: 10px solid #2a2a2a;
+  outline-offset: -5px;
+  padding-bottom: 20px;
+  background: #1f1f1f;
+  height: 80vh;
+}
+
+@media (max-width: 767px) {
+  .projectItem {
+    height: 80vh;
+  }
+
+  .projectItemOutside {
+    height: 80vh;
+  }
+}
+
 @media (max-width: 700px) {
   .defaultMenu {
     display: none;
