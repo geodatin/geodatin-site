@@ -291,6 +291,10 @@ body {
   padding: 30px;
 }
 
+.member {
+  margin-bottom: 10px;
+}
+
 .outsideItemProject {
   background: #1f1f1f;
   width: 50%;
