@@ -197,6 +197,11 @@ body {
   text-decoration: none;
 }
 
+.link:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 #sectionBanner {
   display: flex;
   align-items: center;
