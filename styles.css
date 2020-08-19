@@ -326,6 +326,21 @@ body {
   outline-offset: -5px;
   padding-bottom: 20px;
   height: 40vh;
+  color: white;
+}
+
+.projectItem:hover {
+  color: white;
+  text-decoration: none;
+  padding-bottom: 30px;
+  transition: padding-bottom 0.3s ease-in-out;
+}
+
+.projectItemOutside:hover {
+  color: white;
+  text-decoration: none;
+  padding-bottom: 30px;
+  transition: padding-bottom 0.3s ease-in-out;
 }
 
 .projectItemInside {
@@ -398,6 +413,7 @@ body {
   padding-bottom: 20px;
   background: #1f1f1f;
   height: 80vh;
+  color: white;
 }
 
 @media (max-width: 767px) {
