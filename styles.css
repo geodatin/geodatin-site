@@ -531,13 +531,21 @@ body {
 #footerInner {
   display: flex;
   justify-content: space-between;
+  flex-flow: column;
   align-items: center;
   width: 100%;
-  max-width: 500px;
+  max-width: 80%;
 }
 
-@media (max-width: 450px) {
+.footerRow {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+/* @media (max-width: 450px) {
   #footerInner {
     flex-direction: column;
   }
-}
+} */
