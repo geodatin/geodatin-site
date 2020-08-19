@@ -315,13 +315,9 @@ body {
 }
 
 .projectItem {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-end;
-  align-items: center;
-  text-align: center;
   padding-bottom: 20px;
   height: 40vh;
+  position: relative;
   color: white;
   transition: padding-bottom 0.3s ease-in-out;
 }
@@ -331,19 +327,29 @@ body {
   text-decoration: none;
   padding-bottom: 30px;
 }
-
-.projectItemOutside:hover {
-  color: white;
-  text-decoration: none;
-  padding-bottom: 30px;
-  transition: padding-bottom 0.3s ease-in-out;
-}
-
 .projectItemInside {
+  position: absolute;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
   z-index: 20;
+  padding: 8px;
+  padding-bottom: 18px;
   display: flex;
   flex-flow: column;
   align-items: center;
+  transition: padding-bottom 0.3s ease-in-out;
+  color: white;
+}
+
+.projectItemInside:hover {
+  color: white;
+  text-decoration: none;
+  padding-bottom: 35px;
 }
 
 #mercagro {
@@ -360,7 +366,7 @@ body {
   right: 0px;
   bottom: 0px;
   background-image: linear-gradient(180deg, RGBA(0, 0, 0, 0), black);
-  z-index: 0;
+  z-index: -1;
 }
 
 #geocovid {
@@ -385,18 +391,6 @@ body {
   background-image: url("assets/imgs/geocovid.jpeg");
   background-size: cover;
   background-position: center;
-}
-
-.projectItemOutside {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-end;
-  align-items: center;
-  text-align: center;
-  padding-bottom: 20px;
-  background: #1f1f1f;
-  height: 80vh;
-  color: white;
 }
 
 @media (max-width: 767px) {
