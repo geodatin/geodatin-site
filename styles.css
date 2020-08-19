@@ -170,7 +170,7 @@ body {
   min-height: 90vh;
   width: 80%;
   color: white;
-  padding: 50px 0px;
+  padding: 50px 15px;
   position: relative;
 }
 
@@ -295,12 +295,14 @@ body {
   margin-bottom: 10px;
 }
 
+.imgCrop {
+  border-radius: 50%;
+}
+
 .outsideItemProject {
   background: #1f1f1f;
   width: 50%;
   height: auto;
-  /* width: 440px;
-  height: 440px; */
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end;
