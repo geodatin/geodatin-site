@@ -268,52 +268,12 @@ body {
   padding: 20px;
 }
 
-.gridProjects {
-  width: 50%;
-}
-
-.line2 {
-  width: 100%;
-  display: flex;
-  height: 50%;
-}
-
-.gridItemProject {
-  width: 50%;
-  background: #1f1f1f;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-end;
-  align-items: center;
-  text-align: center;
-  outline: 10px solid #2a2a2a;
-  outline-offset: -1px;
-  padding: 30px;
-}
-
 .member {
   margin-bottom: 10px;
 }
 
 .imgCrop {
   border-radius: 50%;
-}
-
-.outsideItemProject {
-  background: #1f1f1f;
-  width: 50%;
-  height: auto;
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: flex-end;
-  align-items: center;
-  outline-offset: -1px;
-  padding-bottom: 20px;
-}
-
-.outsideGridProjects {
-  display: flex;
-  flex-flow: row wrap;
 }
 
 .projectItem {
@@ -354,12 +314,6 @@ body {
   padding-bottom: 35px;
 }
 
-#mercagro {
-  background-image: url("assets/imgs/mercagro.jpeg");
-  background-size: cover;
-  background-position: center;
-}
-
 .gradient::before {
   content: "";
   position: absolute;
@@ -369,6 +323,12 @@ body {
   bottom: 0px;
   background-image: linear-gradient(180deg, RGBA(0, 0, 0, 0), black);
   z-index: -1;
+}
+
+#mercagro {
+  background-image: url("assets/imgs/mercagro.jpeg");
+  background-size: cover;
+  background-position: center;
 }
 
 #geocovid {
@@ -440,31 +400,11 @@ body {
   max-width: 400px;
 }
 
-.gridInner1 {
-  width: 50%;
-  background: gray;
-}
-
-.gridInner2 {
-  width: 50%;
-  background: white;
-  display: flex;
-  flex-flow: column;
-  align-items: flex-end;
-  justify-content: center;
-}
-
 .miniBar {
   width: 40px;
   height: 5px;
   background: white;
   margin: 10px;
-}
-
-.miniBar2 {
-  width: 40px;
-  height: 5px;
-  background: white;
 }
 
 .logo {
@@ -491,10 +431,6 @@ body {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-}
-
-.memberPhoto {
-  border-radius: 50%;
 }
 
 .contactArea {
@@ -538,9 +474,3 @@ body {
   flex-flow: row wrap;
   justify-content: space-around;
 }
-
-/* @media (max-width: 450px) {
-  #footerInner {
-    flex-direction: column;
-  }
-} */
