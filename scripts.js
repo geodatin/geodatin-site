@@ -1,4 +1,4 @@
-$("a.scrollLink").on("click", function (event) {
+/* $("a.scrollLink").on("click", function (event) {
   event.preventDefault();
   var hash = this.hash;
   var position = $(".sectionWrapper").scrollTop() + $(hash).offset().top - 30; //$(".navbar").outerHeight()
@@ -9,7 +9,7 @@ $("a.scrollLink").on("click", function (event) {
     },
     400
   );
-});
+}); */
 
 $(".sectionWrapper").scroll(function () {
   event.stopPropagation();
