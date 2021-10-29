@@ -43,3 +43,6 @@ $(".responsiveMenu").on("click", function (event) {
 
   event.stopPropagation();
 });
+
+document.getElementById("copyright").innerHTML =
+  "Copyright © " + new Date().getFullYear() + " Geodatin. All rights reserved.";
