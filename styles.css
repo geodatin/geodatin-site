@@ -271,6 +271,10 @@ body {
 
 .imgCrop {
   border-radius: 50%;
+  width: 130px;
+  height: "auto";
+  object-fit: cover;
+  object-position: center;
 }
 
 .projectItem {
@@ -418,12 +422,14 @@ body {
   justify-content: flex-end;
   align-items: center;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .lineTeam {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  max-width: 660px;
 }
 
 .contactArea {
